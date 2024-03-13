@@ -6,7 +6,7 @@ public class SwordRotation : MonoBehaviour
 {
     private float leftright;
     private float updown;
-    private float swordrotation;
+    private Vector3 swordrotation;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,26 +18,31 @@ public class SwordRotation : MonoBehaviour
     {
         leftright = Input.GetAxis("Horizontal");
         updown = Input.GetAxis("Vertical");
+        swordrotation = transform.rotation.eulerAngles;
 
         Debug.Log(leftright);
-        if (updown > 0) // Up
+        if (updown > 0.2) // Up
         {
-            swordrotation = 0;
+            swordrotation.z = 0.0f;
+            transform.rotation = Quaternion.Euler(swordrotation);
         }
-        if (updown < 0) // Down
+        else if (updown < -0.2) // Down
         {
-            swordrotation = 180;
+            swordrotation.z = 180.0f;
+            transform.rotation = Quaternion.Euler(swordrotation);
         }
-        if (leftright > 0) // Right
-        { 
-        
+        else if (leftright > 0.2) // Right
+        {
+            swordrotation.z = -90.0f;
+            transform.rotation = Quaternion.Euler(swordrotation);
         }
-        if (leftright < 0) // Left\
-        { 
-        
+        else if (leftright < -0.2) // Left\
+        {
+            swordrotation.z = 90.0f;
+            transform.rotation = Quaternion.Euler(swordrotation);
         }
 
 
-        //transform.rotation = new Vector3 (transform.rotation.x, transform.rotation.y, 
+        
     }
 }

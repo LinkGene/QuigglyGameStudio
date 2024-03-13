@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SwingSword : MonoBehaviour
 {
-    public GameObject Sword;
+    
     public Animator animator;
     public bool hasSwung = false;
 
@@ -26,13 +26,16 @@ public class SwingSword : MonoBehaviour
 
     public void Attack()
     {
+        if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+        {
+            animator.SetTrigger("SwingSword");
+            hasSwung = true;
+        }
         // play animate of atack
-        animator.SetTrigger("SwingSword");
-        hasSwung = true;
         // detect enemy and do Damage
     }
     void DoneSwinging()
     {
-        Sword.SetActive(false);
+        gameObject.SetActive(false);
     }
 }
