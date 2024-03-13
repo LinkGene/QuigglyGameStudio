@@ -7,6 +7,7 @@ public class SwingSword : MonoBehaviour
     
     public Animator animator;
     public bool hasSwung = false;
+    public int Damage = 10;
 
     // Start is called before the first frame update
     void Start()
