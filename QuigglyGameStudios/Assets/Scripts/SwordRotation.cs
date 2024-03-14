@@ -21,22 +21,22 @@ public class SwordRotation : MonoBehaviour
         swordrotation = transform.rotation.eulerAngles;
 
         Debug.Log(leftright);
-        if (updown > 0.2) // Up
+        if (updown > 0.1) // Up
         {
             swordrotation.z = 0.0f;
             transform.rotation = Quaternion.Euler(swordrotation);
         }
-        else if (updown < -0.2) // Down
+        else if (updown < -0.1) // Down
         {
             swordrotation.z = 180.0f;
             transform.rotation = Quaternion.Euler(swordrotation);
         }
-        else if (leftright > 0.2) // Right
+        else if (leftright > 0.1) // Right
         {
             swordrotation.z = -90.0f;
             transform.rotation = Quaternion.Euler(swordrotation);
         }
-        else if (leftright < -0.2) // Left\
+        else if (leftright < -0.01) // Left\
         {
             swordrotation.z = 90.0f;
             transform.rotation = Quaternion.Euler(swordrotation);
