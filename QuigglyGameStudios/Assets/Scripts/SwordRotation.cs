@@ -20,7 +20,7 @@ public class SwordRotation : MonoBehaviour
         updown = Input.GetAxis("Vertical");
         swordrotation = transform.rotation.eulerAngles;
 
-        Debug.Log(leftright);
+        
         if (updown > 0.1) // Up
         {
             swordrotation.z = 0.0f;

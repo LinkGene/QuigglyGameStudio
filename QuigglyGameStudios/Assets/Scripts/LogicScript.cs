@@ -6,11 +6,26 @@ using UnityEngine.SceneManagement;
 
 public class LogicScript : MonoBehaviour
 {
-    public int playerLives = 5;
+    public GameObject Player;
+    public int playerLives;
     public Text livesText;
     public GameObject gameOverScreen;
 
-    [ContextMenu("Decrease Lives")]
+
+    void Update()
+    {
+        playerLives = Player.GetComponent<PlayerHealth>().health;
+        if (playerLives == 0 || playerLives < 0)
+        {
+            playerLives = 0;
+            livesText.text = playerLives.ToString();
+            gameOver();
+        }
+        livesText.text = playerLives.ToString();
+    }
+
+
+    /*[ContextMenu("Decrease Lives")]
     public void plusMinusLives()
     {
         playerLives = playerLives - 1;
@@ -21,7 +36,7 @@ public class LogicScript : MonoBehaviour
             gameOver();
         }
         livesText.text = playerLives.ToString();
-    }
+    }*/
 
     public void restartGame()
     {
