@@ -26,6 +26,11 @@ public class LogicScript : MonoBehaviour
             }
             livesText.text = playerLives.ToString();
         }
+        else
+        {
+            playerLives = 0;
+            livesText.text = playerLives.ToString();
+        }
     }
 
 
