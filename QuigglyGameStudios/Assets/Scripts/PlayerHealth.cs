@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
         health = maxHealth;
     }
 
-    public void TakeDamage (int amount)
+    public void TakeDamage(int amount)
     {
         health -= amount;
         if (health < 0)
