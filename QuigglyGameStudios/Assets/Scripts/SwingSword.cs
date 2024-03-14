@@ -7,7 +7,7 @@ public class SwingSword : MonoBehaviour
     
     public Animator animator;
     public bool hasSwung = false;
-    public int Damage = 10;
+    public int damage = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +34,15 @@ public class SwingSword : MonoBehaviour
         }
         // play animate of atack
         // detect enemy and do Damage
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+        if (collision.gameObject.tag == "Enemy")
+        {
+            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
+        }
     }
     void DoneSwinging()
     {

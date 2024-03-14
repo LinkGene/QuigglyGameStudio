@@ -14,14 +14,18 @@ public class LogicScript : MonoBehaviour
 
     void Update()
     {
-        playerLives = Player.GetComponent<PlayerHealth>().health;
-        if (playerLives == 0 || playerLives < 0)
+
+        if (Player != null)
         {
-            playerLives = 0;
+            playerLives = Player.GetComponent<PlayerHealth>().health;
+            if (playerLives == 0 || playerLives < 0)
+            {
+                playerLives = 0;
+                livesText.text = playerLives.ToString();
+                gameOver();
+            }
             livesText.text = playerLives.ToString();
-            gameOver();
         }
-        livesText.text = playerLives.ToString();
     }
 
 

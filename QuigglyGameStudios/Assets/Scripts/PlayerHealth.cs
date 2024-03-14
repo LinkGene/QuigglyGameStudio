@@ -15,10 +15,24 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-        health -= amount;
-        if (health < 0)
+        if (GetComponent<Moving>() != null)
         {
-            Destroy(gameObject);
+            if (GetComponent<Moving>().dodgeInvincibility == false)
+            {
+                health -= amount;
+                if (health <= 0)
+                {
+                    Destroy(gameObject);
+                }
+            }
+        }
+        else
+        {
+            health -= amount;
+            if (health <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
