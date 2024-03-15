@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 3939
+        width: 599
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 8, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e7ff38b7009ba4ba8c7d217d6a7766
+      internalID: -1808543489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_1
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 3977
+        width: 575
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 7, z: 0, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4014da514bcabe74eade038fbf5ca793
+      internalID: -864858451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3258
+        width: 596
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 9, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68eaba5e0cb317545808fa35b2ead07f
+      internalID: -530907076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_3
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 3242
+        width: 588
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed42e44ea01dc6439a8c7521d971666
+      internalID: -95382982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_4
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 2483
+        width: 657
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c564e0ac925e0428799f06b978401b
+      internalID: 804873144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_5
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1622
+        width: 527
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ac5feb55404b5419bcb304cdb63bf2
+      internalID: -965819187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_6
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1626
+        width: 488
+        height: 472
+      alignment: 9
+      pivot: {x: 0.4919466, y: 0.50891113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1f45f56cac43e499b5a350a868d707
+      internalID: -152962600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_7
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 780
+        width: 659
+        height: 698
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb8192bdf84a1041801df916f33f972
+      internalID: 2017680620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_8
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 778
+        width: 698
+        height: 698
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b915462403593ef49b79b5eb29f74519
+      internalID: 2102147648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_9
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 770
+        width: 698
+        height: 698
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b182f28bcffb3b4e90f4b6303777ed1
+      internalID: 302238429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_10
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 762
+        width: 965
+        height: 743
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b9a3deb9e6406458893f8e61ffdf50
+      internalID: 1317072702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_11
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 92
+        width: 902
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 6, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9faefaf82c02fd041a80e1653a66f545
+      internalID: -1824129423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_12
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 72
+        width: 645
+        height: 645
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09396ff6dd9d85b40b752eb1fe72b083
+      internalID: -617492694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_13
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 63
+        width: 645
+        height: 645
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2f7e31abb66994b9423c4b82a10e9d
+      internalID: 957501262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemies&DeathAnim_14
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 51
+        width: 645
+        height: 645
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa84f0fd4d0cd24788ef34bc5cee4bf
+      internalID: 167296291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +434,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Enemies&DeathAnim_0: -1808543489
+      Enemies&DeathAnim_1: -864858451
+      Enemies&DeathAnim_10: 2102147648
+      Enemies&DeathAnim_11: 302238429
+      Enemies&DeathAnim_12: 1317072702
+      Enemies&DeathAnim_13: -1824129423
+      Enemies&DeathAnim_14: -617492694
+      Enemies&DeathAnim_2: -530907076
+      Enemies&DeathAnim_3: -95382982
+      Enemies&DeathAnim_4: 804873144
+      Enemies&DeathAnim_5: -965819187
+      Enemies&DeathAnim_6: 329737691
+      Enemies&DeathAnim_7: -152962600
+      Enemies&DeathAnim_8: 1469635757
+      Enemies&DeathAnim_9: 2017680620
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
