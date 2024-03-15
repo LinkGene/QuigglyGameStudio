@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 4794552629692947869}
   - component: {fileID: 2022982067020857241}
   - component: {fileID: 5486672746599157863}
+  - component: {fileID: -4193170995113406350}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -318,7 +319,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbec339ff35ac6143bf95b2fcad5039a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SPEED: 5
+  Speed: 5
+  dodgespeed: 0
+  dodge_invincibility_time: 0.5
+  dodge_again_time: 1.5
+  hasDodged: 0
+  dodgeInvincibility: 0
   sword: {fileID: 8323516528102298627}
 --- !u!114 &5486672746599157863
 MonoBehaviour:
@@ -334,6 +340,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 5
+  isDamaged: 0
+  isDamagedTimer: 0.5
+--- !u!95 &-4193170995113406350
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5368250974778438284}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8105243043967757592
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,4 +568,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 5967153108986757612}
   hasSwung: 0
-  Damage: 10
+  damage: 1
