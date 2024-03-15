@@ -7,16 +7,18 @@ public class BigBadToadAttackPattern : MonoBehaviour
     public Animator animator;
     private int rannum;
 
+    private Vector3 tungrotation;
+
     [SerializeField] private float jumpAttackIntervalMin;
     [SerializeField] private float jumpAttackIntervalMax;
-    private float jumpAttackInterval;
-    private float jumpAttackTimer;
+    private float jumpAttackInterval = 10f;
+    private float jumpAttackTimer = 0f;
     private bool isJumpAttack = false;
 
     [SerializeField] private float tungAttackIntervalMin;
     [SerializeField] private float tungAttackIntervalMax;
-    private float tungAttackInterval;
-    private float tungAttackTimer;
+    private float tungAttackInterval = 30f;
+    private float tungAttackTimer = 0f;
     private bool isTungAttack = false;
 
     void SetJumpAttackInterval()
@@ -55,11 +57,12 @@ public class BigBadToadAttackPattern : MonoBehaviour
 
     void JumpAttack()
     {
+        Debug.Log("Jump Attack");
         animator.SetTrigger("JumpAttack");
     }
     void TungAttack()
     {
-        //animator.SetTrigger("TungAttack");
+        animator.SetTrigger("TungAttack");
     }
 
     // Update is called once per frame
@@ -69,27 +72,27 @@ public class BigBadToadAttackPattern : MonoBehaviour
         jumpAttackTimer += Time.deltaTime;
         tungAttackTimer += Time.deltaTime;
 
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            JumpAttack();
+        }
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            TungAttack();
+        }
+
         if (jumpAttackTimer >= jumpAttackInterval && isTungAttack == false)
         {
             JumpAttack();
+            SetJumpAttackInterval();
             jumpAttackTimer = 0f;
         }
 
         if (tungAttackTimer >= tungAttackInterval && isJumpAttack == false)
         {
             TungAttack();
+            SetTungAttackInterval();
             tungAttackTimer = 0f;
-        }
-
-
-
-
-
-
-
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            JumpAttack();
         }
     }
 
@@ -100,15 +103,25 @@ public class BigBadToadAttackPattern : MonoBehaviour
         {
             case 1: // Top Left
                 transform.position = new Vector3(-7f, 3.5f, transform.position.z);
+                tungrotation.z = -90.0f;
+                transform.rotation = Quaternion.Euler(tungrotation);
+
                 break;
             case 2: // Top Right
                 transform.position = new Vector3(7f, 3.5f, transform.position.z);
+                tungrotation.z = 180.0f;
+                transform.rotation = Quaternion.Euler(tungrotation);
                 break;
             case 3: // Bottom Left
                 transform.position = new Vector3(-7f, -3.5f, transform.position.z);
+                tungrotation.z = 0f;
+                transform.rotation = Quaternion.Euler(tungrotation);
                 break;
-            case 4:
+            case 4: // Bottom Right
                 transform.position = new Vector3(7f, -3.5f, transform.position.z);
+                tungrotation.z = 90.0f;
+                transform.rotation = Quaternion.Euler(tungrotation);
+
                 // code
                 break;
         }
