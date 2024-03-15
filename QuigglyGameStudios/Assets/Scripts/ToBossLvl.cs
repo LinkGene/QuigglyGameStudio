@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ToBossLvl : MonoBehaviour
 {
@@ -17,12 +18,13 @@ public class ToBossLvl : MonoBehaviour
     }
 
     // Use this for initialization
-void OnTriggerEnter(Player)
-{
-    if (Player.gameObject.tag == "Player")
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        DontDestroyOnLoad(Player.gameObject);
-        Application.LoadLevel("boss fight");   
-    }
+        if (collision.gameObject.tag == "Player")
+
+        DontDestroyOnLoad(collision.gameObject);
+        SceneManager.LoadScene(2);
+    }   
+    
 }
-}
+
